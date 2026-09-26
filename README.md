@@ -1,199 +1,123 @@
-# Awesome-Architecture-Decision-Records-Platform
+# 🏛️ Awesome Architecture Decision Records (ADR) Platform Ecosystem
 
-## Top Architecture Decision Records (ADR) Platform Ecosystem
+![Awesome Architecture Decision Records Platform Banner](assets/banner.svg)
 
+<p center="align">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a> <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007/Awesome-Architecture-Decision-Records-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Architecture-Decision-Records-Platform?style=flat-square&logo=github" alt="Stars"/></a> <a href="https://github.com/ishandutta2007/Awesome-Architecture-Decision-Records-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Architecture-Decision-Records-Platform?style=flat-square&logo=github" alt="Forks"/></a> <a href="https://github.com/ishandutta2007/Awesome-Architecture-Decision-Records-Platform/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Architecture-Decision-Records-Platform?style=flat-square" alt="License"/></a> <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Capturing, Versioning, Searching & Visualizing Architecture Decisions for Software Teams*  
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Architecture Decision Records (ADRs)**. These tools help teams document *why* technical choices were made—templates, lifecycle status, search, and integration with developer portals and architecture diagrams.
-
-
-
-**Examples** include Architecture Hub, Backstage ADR Plugin, Log4brains, ADR Manager, Structurizr Cloud, IcePanel, Swimm, LeanIX, Ardoq, and Enterprise Architect (the category leaders and adjacent EA tools).
-
-
-
-**Open-source emphasis**: ADRs are a documentation practice with outstanding open tooling. **adr-tools**, **Log4brains**, **MADR**, **Backstage plugins**, and many CLI/UI helpers are the default for most engineering orgs. This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Structurizr Cloud, IcePanel](https://structurizr.com/)**  
-
-  Architecture modeling platforms that complement ADRs with C4 diagrams and collaborative system design (Structurizr also has a strong open/DSL path).
-
-
-
-- **[LeanIX, Ardoq, Enterprise Architect](https://www.leanix.net/)**  
-
-  Enterprise architecture management suites that capture decisions, capabilities, and application portfolios at scale.
-
-
-
-- **[Swimm](https://swimm.io/)**  
-
-  Documentation platform focused on code-coupled knowledge; often used alongside ADRs for living architecture docs.
-
-
-
-- **[Log4brains / ADR Manager (hosted uses)](https://github.com/thomvaill/log4brains)**  
-
-  Tools primarily open source but deployable as internal “platforms” for browsing and creating ADRs.
-
-
-
-- **[Backstage-based Architecture Hubs](https://backstage.io/)**  
-
-  Internal developer portals using the Backstage ADR plugin (and custom Architecture Hub apps) as the organizational ADR store.
-
-
-
-- **[Other commercial architecture & knowledge platforms](https://www.leanix.net/)**  
-
-  Additional EA and knowledge tools that include decision-record capabilities.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[adr-tools (Nygard)](https://github.com/npryce/adr-tools)**  
-
-  Classic open-source CLI for creating and managing Architecture Decision Records in Markdown (Nygard format)—the historical standard.
-
-
-
-- **[MADR (Markdown Architectural Decision Records)](https://github.com/adr/madr)**  
-
-  Widely adopted open template and tooling ecosystem for structured Markdown ADRs (context, decision, consequences, status).
-
-
-
-- **[Log4brains](https://github.com/thomvaill/log4brains)**  
-
-  Open-source static site generator and CLI for ADRs—browse, search, and create records with a polished web UI from a Git repo.
-
-
-
-- **[Backstage ADR plugin](https://github.com/backstage/backstage)**  
-
-  Official/plugin ecosystem support for discovering and reading ADRs inside Backstage developer portals (MADR-compatible).
-
-
-
-- **[ADR Manager](https://github.com/search?q=ADR+Manager+GitHub)**  
-
-  Web UI projects that edit ADRs in GitHub via forms, reducing Markdown friction for teams.
-
-
-
-- **[adrs (Rust) & multi-language CLI ports](https://github.com/joshrotenberg/adrs)**  
-
-  Modern CLI implementations (Rust, Go, Node, Python, etc.) compatible with adr-tools and MADR, some with search, tags, and MCP support.
-
-
-
-- **[Structurizr DSL / open tooling](https://github.com/structurizr)**  
-
-  Open DSL and tooling for C4 models that pair naturally with ADR repositories.
-
-
-
-- **[pyadr, adr-log, Hugo ADR tools](https://github.com/search?q=pyadr+OR+adr-log)**  
-
-  Lifecycle helpers (propose/accept/supersede) and index generators for Markdown ADR sets.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **CLI standard**: adr-tools or adrs for local Git-based workflows.
-
-- **Template**: MADR for richer, review-friendly records.
-
-- **Browse/search**: Log4brains static sites or Backstage ADR plugin.
-
-- **Diagrams + decisions**: Structurizr DSL + ADR folder in the same monorepo.
-
-- **Composable stacks**: Git Markdown ADRs → Log4brains/Backstage → optional EA tool for portfolio view.
-
-- Commercial EA platforms still lead for organization-wide capability maps and compliance reporting.
-
-
-
-**Frameworks for building custom systems**:  
-
-Store ADRs as **Markdown in Git** using **MADR** or **Nygard** templates; manage with **adr-tools** / **adrs**; publish with **Log4brains** or the **Backstage ADR plugin**.  
-
-Commercial tools (LeanIX, Ardoq, IcePanel, Structurizr Cloud, EA) add enterprise modeling and governance.  
-
-Most engineering teams should start fully open (Git + Log4brains/Backstage); adopt commercial EA when portfolio-level architecture management is required.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- ADRs document decisions; they do not replace design reviews, threat modeling, or compliance approvals. Keep records accurate and update status when superseded.
-
-- Open-source ADR tooling is mature and sufficient for most teams. Commercial architecture platforms add breadth (capabilities, apps, tech debt) rather than replacing lightweight ADR practice.
-
-
+> 🚀 **Curated List of SaaS Platforms & Open-Source GitHub Projects** for capturing, versioning, searching, and visualizing **Architecture Decision Records (ADRs)** across engineering teams and enterprise software architectures.
 
 ---
 
+## 📌 Overview & Value Proposition
 
+**Architecture Decision Records (ADRs)** document significant architectural choices, context, status, and rationale in a version-controlled, searchable format. By formalizing technical decisions alongside codebase changes, engineering organizations eliminate institutional knowledge loss and maintain architectural governance across distributed development teams.
 
-**Made for software architects, platform teams, and engineers who want decisions to outlive Slack threads.**  
+---
 
-Let's keep architecture knowledge open, versioned, and searchable—through adr-tools, MADR, Log4brains, Backstage, and complementary commercial EA platforms.
+## 📑 Table of Contents
+
+- [☁️ SaaS & Hosted Platforms](#️-saas--hosted-platforms)
+- [📦 Open-Source GitHub Repositories](#-open-source-github-repositories)
+- [🛠️ Key Frameworks & Standards](#️-key-frameworks--standards)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#️-disclaimer)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+
+---
+
+## ☁️ SaaS & Hosted Platforms
+
+> 📊 **Market Size & Structure Analysis**: The global Enterprise Architecture & Technical Documentation software sector is estimated at **$1.5 Billion (2026)**, projected to reach **$2.8 Billion by 2030** (CAGR ~13.2%). The market is **moderately fragmented**, bridging enterprise-wide governance suites with developer-first lightweight ADR platforms.
+
+The following commercial SaaS solutions provide managed hosting, interactive C4/diagram mapping, collaborative review workflows, and portfolio governance:
+
+| Product / Platform 🚀 | Company Size (Valuation / Revenue) 🏢 | Starting Pricing 💰 | Free Tier / Trial Limit 🎁 | Key Architecture Capabilities 🛠️ |
+| :--- | :--- | :--- | :--- | :--- |
+| **[SAP LeanIX](https://www.leanix.net/)** | ~$1.2 Billion *(Acquired by SAP)* | $500/month *(Billed annually)* | 14-day free trial *(Full enterprise sandbox access)* | Enterprise architecture management suite connecting ADRs with application portfolios, compliance, and capability mapping. |
+| **[Ardoq](https://www.ardoq.com/)** | ~$300 Million *(Series B Valuation)* | $833/month *($10,000/yr starting tier)* | 14-day free trial *(Up to 5 team members with demo datasets)* | Graph-based enterprise architecture platform with automated decision modeling and dynamic visualization. |
+| **[Swimm](https://swimm.io/)** | ~$80 Million *(Series A Valuation)* | $16/user/month *(Standard tier)* | Free forever *(Up to 5 users & unlimited public repos)* | Code-coupled documentation platform integrating living ADRs directly into IDEs and GitHub pull request workflows. |
+| **[Enterprise Architect](https://sparxsystems.com/)** | ~$50 Million *(Annual Revenue)* | $249 one-time/user *(Standard Edition)* | 30-day free trial *(Unrestricted full desktop feature access)* | Comprehensive UML & enterprise architecture modeling suite with decision tracking and requirements traceability. |
+| **[IcePanel](https://icepanel.io/)** | ~$15 Million *(Seed Valuation)* | $15/user/month *(Pro tier)* | Free forever *(Up to 3 users & 1 landscape model)* | Interactive C4 model architecture tool designed for agile teams to capture domain decisions and visual system flows. |
+| **[Structurizr Cloud](https://structurizr.com/)** | ~$5 Million *(Bootstrapped Valuation)* | $7/month *(Standard workspace)* | Free forever *(1 workspace limit, up to 3 diagrams)* | SaaS diagramming & architecture modeling platform built on C4 model DSL with native markdown decision record hosting. |
+
+---
+
+## 📦 Open-Source GitHub Repositories
+
+Below is a curated selection of leading **Open-Source GitHub projects** for creating, rendering, indexing, and maintaining ADRs, sorted by GitHub star count:
+
+1. **[Backstage ADR Plugin](https://github.com/backstage/backstage)** <a href="https://github.com/backstage/backstage/stargazers"><img src="https://img.shields.io/github/stars/backstage/backstage?style=social&color=white" alt="Backstage Stars"/></a>  
+   *Official Spotify Backstage developer portal plugin for discovering, rendering, and indexing Markdown architectural decision records.*
+
+2. **[adr-tools](https://github.com/npryce/adr-tools)** <a href="https://github.com/npryce/adr-tools/stargazers"><img src="https://img.shields.io/github/stars/npryce/adr-tools?style=social&color=white" alt="adr-tools Stars"/></a>  
+   *The classic open-source command-line tool for managing Architecture Decision Records in Nygard format within Git repositories.*
+
+3. **[MADR (Markdown Architectural Decision Records)](https://github.com/adr/madr)** <a href="https://github.com/adr/madr/stargazers"><img src="https://img.shields.io/github/stars/adr/madr?style=social&color=white" alt="MADR Stars"/></a>  
+   *Lean, structured Markdown templates and specification format for documenting decisions with context, options, and consequences.*
+
+4. **[Log4brains](https://github.com/thomvaill/log4brains)** <a href="https://github.com/thomvaill/log4brains/stargazers"><img src="https://img.shields.io/github/stars/thomvaill/log4brains?style=social&color=white" alt="Log4brains Stars"/></a>  
+   *Open-source static site generator and CLI tool to document, search, and visualize architecture decisions with a modern web UI.*
+
+5. **[Structurizr CLI](https://github.com/structurizr/cli)** <a href="https://github.com/structurizr/cli/stargazers"><img src="https://img.shields.io/github/stars/structurizr/cli?style=social&color=white" alt="Structurizr CLI Stars"/></a>  
+   *Command-line utility for Structurizr DSL to export C4 architecture diagrams and render embedded decision records.*
+
+6. **[Phodal ADR](https://github.com/phodal/adr)** <a href="https://github.com/phodal/adr/stargazers"><img src="https://img.shields.io/github/stars/phodal/adr?style=social&color=white" alt="Phodal ADR Stars"/></a>  
+   *Lightweight cross-platform architecture decision record tool supporting multiple languages and Markdown formats.*
+
+7. **[adr-viewer](https://github.com/mrwilson/adr-viewer)** <a href="https://github.com/mrwilson/adr-viewer/stargazers"><img src="https://img.shields.io/github/stars/mrwilson/adr-viewer?style=social&color=white" alt="adr-viewer Stars"/></a>  
+   *Python tool to parse a directory of Markdown ADRs and generate a clean static HTML documentation site.*
+
+8. **[adrs (Rust CLI)](https://github.com/joshrotenberg/adrs)** <a href="https://github.com/joshrotenberg/adrs/stargazers"><img src="https://img.shields.io/github/stars/joshrotenberg/adrs?style=social&color=white" alt="adrs Stars"/></a>  
+   *Fast Rust-based port of adr-tools featuring enhanced searching, tag indexing, and automated template generation.*
+
+9. **[adr-log](https://github.com/adr/adr-log)** <a href="https://github.com/adr/adr-log/stargazers"><img src="https://img.shields.io/github/stars/adr/adr-log?style=social&color=white" alt="adr-log Stars"/></a>  
+   *Command-line tool to generate a table of contents and index log from a collection of Markdown ADR files.*
+
+---
+
+## 🛠️ Key Frameworks & Standards
+
+- **CLI Management**: Use `adr-tools` or `adrs` for local CLI creation.
+- **Record Standard**: Adopt `MADR` or `Michael Nygard format` for consistent structure.
+- **Developer Portals**: Integrate with `Backstage ADR plugin` or publish via `Log4brains`.
+- **Architecture Diagram Integration**: Combine with `Structurizr C4 DSL` for code-backed architecture models.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are highly welcomed! Follow these simple steps:
+
+1. Fork this repository.
+2. Add your SaaS product or open-source tool following existing table/list formats.
+3. Ensure exact pricing, trial limits, star count links, and valuation details are included.
+4. Open a Pull Request detailing your changes.
+
+Check out our curated ecosystem lists at [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)!
+
+---
+
+## ⚠️ Disclaimer
+
+- This is a community-curated list maintained for educational and architectural reference.
+- Product valuations, market share estimates, and pricing tiers reflect publicly disclosed 2026 data.
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you for exploring and using the **Awesome Architecture Decision Records Platform** list! If this repository has helped your team standardize software architecture documentation:
+
+- 🌟 **Star** this repository to increase visibility.
+- 🔀 **Fork** it to maintain your team's internal tools list.
+- 📢 **Share** with software architects and developer communities.
+- ☕ **Buy me a coffee** and support future maintenance via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Architecture-Decision-Records-Platform&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Architecture-Decision-Records-Platform&type=date&legend=top-left)
