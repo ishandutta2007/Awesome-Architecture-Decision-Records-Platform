@@ -47,7 +47,7 @@ The following commercial SaaS solutions provide managed hosting, interactive C4/
 
 ## 📦 Open-Source GitHub Repositories
 
-Below is a curated selection of leading **Open-Source GitHub projects** for creating, rendering, indexing, and maintaining ADRs, sorted by GitHub star count:
+Below is a curated selection of leading **Open-Source GitHub projects** for creating, rendering, indexing, and maintaining ADRs, sorted by GitHub Stars_Count:
 
 1. **[Backstage ADR Plugin](https://github.com/backstage/backstage)** <a href="https://github.com/backstage/backstage/stargazers"><img src="https://img.shields.io/github/stars/backstage/backstage?style=social&color=white" alt="Backstage Stars"/></a>  
    *Official Spotify Backstage developer portal plugin for discovering, rendering, and indexing Markdown architectural decision records.*
@@ -93,7 +93,7 @@ Contributions are highly welcomed! Follow these simple steps:
 
 1. Fork this repository.
 2. Add your SaaS product or open-source tool following existing table/list formats.
-3. Ensure exact pricing, trial limits, star count links, and valuation details are included.
+3. Ensure exact pricing, trial limits, Stars_Count links, and valuation details are included.
 4. Open a Pull Request detailing your changes.
 
 Check out our curated ecosystem lists at [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)!
